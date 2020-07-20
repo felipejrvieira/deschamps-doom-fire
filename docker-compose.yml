@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    image: nginx
+    container_name: doom-fire
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    ports:
+      - "80:80"
